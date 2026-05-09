@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================= GS BUBAZI MODERN WEBSITE ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS BUBAZI School</title>
+
+    <style>
+        /* ========== GLOBAL DESIGN ========== */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:blue;
+            color:#222;
+        }
+
+        /* ========== HEADER ========== */
+        header{
+            background: linear-gradient(135deg, #1e3a8a, #3cb371);
+            color:white;
+            text-align:center;
+            padding:30px 20px;
+        }
+
+        header h1{
+            font-size:32px;
+        }
+
+        header p{
+            margin-top:10px;
+            font-size:16px;
+        }
+
+        /* ========== NAVBAR ========== */
+        nav{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            background:green;
+        }
+
+        nav a{
+            color:white;
+            padding:12px 18px;
+            text-decoration:none;
+        }
+
+        nav a:hover{
+            background:grey;
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero{
+            text-align:center;
+            padding:60px 20px;
+            background:yellow;
+        }
+
+        .hero h2{
+            font-size:28px;
+            margin-bottom:10px;
+        }
+
+        .hero p{
+            color:#555;
+        }
+
+        /* ========== CARDS SECTION ========== */
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+            gap:15px;
+            padding:20px;
+        }
+
+        .card{
+            background:violet;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+
+        .card h3{
+            color:#1e3a8a;
+            margin-bottom:10px;
+        }
+
+        /* ========== SECTIONS ========== */
+        section{
+            padding:20px;
+        }
+
+        .box{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.08);
+            margin-top:15px;
+        }
+
+        /* ========== BUTTON ========== */
+        button{
+            margin-top:10px;
+            padding:10px 15px;
+            border:none;
+            background:grey;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1e40af;
+        }
+
+        /* ========== FOOTER ========== */
+        footer{
+            text-align:center;
+            background:skyblue;
+            color:yellow;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>GS BUBAZI SCHOOL</h1>
+    <p>Excellence • Discipline • Future Leaders</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#academics">Academics</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#gallery">gallery</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    <h2>Welcome to GS BUBAZI</h2>
+    <p>We build knowledge, skills, and strong future leaders</p>
+</div>
+
+<!-- HIGHLIGHT CARDS -->
+<div class="cards">
+    <div class="card">
+        <h3>📚 Learning</h3>
+        <p>Quality education for all students</p>
+    </div>
+
+    <div class="card">
+        <h3>👨‍🏫 Teachers</h3>
+        <p>Experienced and supportive staff</p>
+    </div>
+
+    <div class="card">
+        <h3>💻 ICT</h3>
+        <p>Modern computer learning programs</p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="box">
+        <h2>About GS BUBAZI</h2>
+        <p>
+            GS BUBAZI is committed to academic excellence, discipline, and student development.
+            We prepare students for a successful future through education and skills training.
+        </p>
+    </div>
+</section>
+    <!---gallery--->
+    <section id="gallery">
+        <div class="box">
+    <h2>School Gallery</h2>
+
+    <!-- Image upload -->
+    <input type="file" id="imageInput" accept="image/*">
+
+    <button onclick="addImage()">Upload Image</button>
+
+    <!-- Images appear here -->
+    <div id="galleryContainer"></div>
+        </div>
+</section>
+
+<!-- ACADEMICS -->
+<section id="academics">
+    <div class="box">
+    <h2>Programs</h2>
+    <ul>
+        <li>O-Level Education</li>
+        <li>A-Level Education</li>
+        <ul>
+         <li>MCE</li>  
+         <li>science stream 2</li>
+        </ul>
+        <li>all you want are here</li>
+    </ul>
+    </div>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+    <div class="box">
+        <h2>School News</h2>
+        <p id="newsText">Click below to see latest announcement</p>
+        <button onclick="showNews()">Show News</button>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="box">
+        <h2>Contact Us</h2>
+        <p>Email: gsbubazi@school.rw</p>
+        <p>Phone: +250 792 752 000</p>
+        <p>Location: Rwanda</p>
+    </div>
+</section>
+    
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 GS BUBAZI School</p>
+    <a href="https://iziabayodonath@gmail.com"><P>send email to school</P></a>
+      <a href="0726062820"><P>conact school administrator</P></a>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+function showNews(){
+    document.getElementById("newsText").innerHTML =
+    "📢 Admission is open! All students are invited to register at GS BUBAZI.";
+}
+</script>
+
+</body>
+</html>
